@@ -1,6 +1,6 @@
 import argparse
 import os
-from supported_file_types import SupportedFiles
+from flac_player.supported_file_types import SupportedFiles
 import numpy as np
 
 
@@ -16,6 +16,8 @@ def find_audio_file(directory: str):
             return queue_array
     return False
 
+def load_file():
+    pass
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
