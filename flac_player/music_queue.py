@@ -1,7 +1,3 @@
-import os
-from genericpath import exists
-
-
 def add_file(music_queue: list, file_path: str):
     music_queue.append(file_path)
     return True
