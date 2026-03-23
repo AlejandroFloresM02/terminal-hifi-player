@@ -1,11 +1,6 @@
 import os
 
-from flac_player.enums.supported_file_types import SupportedFileTypes
-
-
-def is_supported_file(filename: str) -> bool:
-    extension = os.path.splitext(filename)[1].lower()
-    return extension in {file_type.value for file_type in SupportedFileTypes}
+from is_supported_file import is_supported_file
 
 
 def scan_library(directory: str) -> dict:

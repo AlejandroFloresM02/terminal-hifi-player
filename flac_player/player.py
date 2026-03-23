@@ -2,17 +2,13 @@ import os
 
 import miniaudio
 from flac_player.music_queue import pop_file
-from flac_player.enums.supported_file_types import SupportedFileTypes
+from is_supported_file import is_supported_file
 
 
 # helpers
 def file_exists(file_path: str) -> bool:
     return os.path.exists(file_path)
 
-
-def is_supported(file_path: str) -> bool:
-    extension = "." + file_path.split(".")[-1].lower()
-    return extension in {file_type.value for file_type in SupportedFileTypes}
 
 
 def print_file_info(info):
@@ -45,7 +41,7 @@ class Player:
             print("File not found")
             return False
 
-        if not is_supported(self.file_path):
+        if not is_supported_file(self.file_path):
             print("Unsupported file type")
             return False
 

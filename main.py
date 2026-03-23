@@ -1,7 +1,7 @@
 import os
 
 from flac_player.player import Player
-from flac_player.enums.player_commands import Command
+from player_commands_enum import Command
 from scan_library import scan_library
 
 
