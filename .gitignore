@@ -1,6 +1,6 @@
 __pycache__/
 .DS_Store
 
-# Ignore all music library content except the sample file
+# Ignore all music library content except .gitkeep
 music_library/*
-!music_library/sample.flac
+!music_library/.gitkeep
