@@ -1,8 +1,8 @@
 import os
 
 import miniaudio
-from music_queue import pop_file
-from supported_file_types import SupportedFileTypes
+from flac_player.music_queue import pop_file
+from flac_player.enums.supported_file_types import SupportedFileTypes
 
 
 # helpers
